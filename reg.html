@@ -4,65 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-style.css">
+    <link rel="stylesheet" href="reg-style.css">
 </head>
 <body>
-    <div>
-        <table align="center">
-            <tr style="background-color: rgb(105, 228, 187); color: white; text-align: center; height: 100px;">
-                <td style="width: 100px;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png"
-                        alt="fb" height="90px" width="90px">
-                </td>
-                <td style="width: 800px; text-align: center;">My Website</td>
-                <td style="width: 200px;">
-                    <p>Sunday, 27 April 2024</p>
-                    <input type="text" placeholder="Search Here">
-                </td>
-            </tr>
-        </table>
-        <table align="center">
-            <tr style="background-color: rgb(130, 9, 130); text-align: center;">
-                <td width="182px"><a style="color: white; text-decoration: none;" href="index.html">Home</a></td>
-                <td width="182px"><a style="color: white; text-decoration: none;" href="form.html">Form</a></td>
-                <td width="182px"><a style="color: white; text-decoration: none;" href="table.html">Table</a></td>
-                <td width="182px"><a style="color: white; text-decoration: none;" href="news.html">News Portal</a></td>
-                <td width="182px"><a style="color: white; text-decoration: none;" href="img.html">Image</a></td>
-                <td width="182px"><a style="color: white; text-decoration: none;" href="contact.html">Contact</a></td>
-            </tr>
-        </table>
+    <!-- nav-bar -->
+    <div class="navbar">
+        <div class="navbar-header">
+            <div class="logo-container">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png" alt="fb">
+            </div>
+            <div class="title-container">
+                <p>AD Paul's Website</p>
+            </div>
+            <div class="search-container">
+                <p>Sunday, 28 April 2024</p>
+                <input type="text" placeholder="Search Here">
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <a href="index.html">Home</a>
+            <a href="form.html">Form</a>
+            <a href="table.html">Table</a>
+            <a href="news.html">News Portal</a>
+            <a href="img.html">Images</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
-    <div style="box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5); width: 50%; margin: 0 auto; padding: 20px;" align="center">
+
+    <!-- form container -->
+    <div class="form-container">
         <h1>Registration Form</h1>
         <form>
-            <label for="fn">Firstname&nbsp;</label>
-            <input type="text" id="fn" placeholder="firstname"><br><br>
-            <label for="ln">Lastname&nbsp;</label>
-            <input type="text" id="ln" placeholder="lastname"><br><br>
-            <label for="mail">Email</label>
-            <input type="email" id="mail" placeholder="email"><br><br>
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="password"><br><br>
-            <table>
-                <tr>
-                    <td width="80px" align="center">Gender</td>
-                    <td width="180px">
-                        <input type="radio" name="gender"> Male <br>
-                        <input type="radio" name="gender"> Female
-                    </td>
-                </tr>
-            </table><br>
-            <label for="div">Division &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</label>
-            <select id="div">
-            <option value="d">Dhaka</option>
-            <option value="c">Chattogram</option>
-            <option value="b">Barishal</option>
-            <option value="k">Khulna</option>
-            <option value="ra">Rajshahi</option>
-            <option value="m">Mymensingh</option>
-            <option value="r">Rangpur</option>
-            <option value="s">Sylet</option>
-            </select><br><br>
-            <button>Submit</button>
+            <div class="form-group">
+                <label for="fn">Firstname</label>
+                <input type="text" id="fn" placeholder="Firstname">
+            </div>
+            <div class="form-group">
+                <label for="ln">Lastname</label>
+                <input type="text" id="ln" placeholder="Lastname">
+            </div>
+            <div class="form-group">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="div">Division</label>
+                <select id="div">
+                    <option value="d">Dhaka</option>
+                    <option value="c">Chattogram</option>
+                    <option value="b">Barishal</option>
+                    <option value="k">Khulna</option>
+                    <option value="ra">Rajshahi</option>
+                    <option value="m">Mymensingh</option>
+                    <option value="r">Rangpur</option>
+                    <option value="s">Sylhet</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
